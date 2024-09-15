@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+      body   {background-color: rgb(248, 248, 248);
+        color: rgb(10, 10, 10);
+        font: normal 20pt ARIAL;
+    }  
+    h1 {color: rgb(10, 10, 10);}
+    p1 {color: darkorchid;}
+    P2 {color: rgb(224, 12, 55);}
+
+      
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <p><p1>HTML:</p1> conteúdo, é o body</p>   
+    <p><p1>CSS:</p1> estilo, é a head</p>
+    <p><p1>JS:</p1> interação, é o script</p>
+    <p>Para abrir, <p1>file-open folder-new folder-new file---ex001.html</p1></p>
+    <p>Para começar digitar <p1>html:5</p1></p>
+    <p><p1>html lang= "pt-br"</p1>  para mudar para portugues</p>
+    <h1>Comandos da head</h1>
+    <p><p1>head:</p1> cabeça</p>
+    <p><p1>title:</p1> é nome que aparece na aba do chrome</p>
+    <p><p1>style:</p1> pra mecher nas cores e tamanhos da letra, ta dentro é CSS, todo final tem ; ponto e virgula ;</p>
+    <p><p1>{background-color:</p1> cor do fundo</p>
+    <p><p1>color:</p1> cor da letra</p>
+    <p><p1>font}:</p1> tamanho da letra e fonte ex font: normal 20pt ARIAL</p>
+    <p><p1>h1 {color:}:</p1> cor do titulo</p>
+    <p><p1>p1 {color}:</p1> cor do p1</p>
+    <h1>Comandos do body</h1>
+    <p><p1>h1:</p1> titulo</p>
+    <p><p1>p:</p1> novo parágrafo</p>
+    <p><p1>p1:</p1> para dividir o texto e poder trocar de cor</p>
+    <h1>Comandos do script</h1>
+    <p>Geralmente o script vai no final do body, para ser carregado depois do codigo base</p>
+    <p><p1>window.alert('MENSAGEM')</p1> ou só <p1>alert('MENSAGEM'):</p1> alerta com mensagem simples, só opção 'ok' ou 'cancel'</p>
+    <p><p1>window.confirm('MENSAGEM'):</p1> janela de confirmação</p>
+    <p><p1>window.prompt('MENSAGEM'):</p1> janela de resposta</p>
+    <p>Para saber as respostas precisa de variáveis na frente</p>
+    <p><p2>Só funciona ESSES comentário dentro do script, fora são outros</p2></p>
+    <p><p2>______________________________________________________________</p2></p>
+    <p><p1>//:</p1> comentário em uma única linha</p>
+    <p><p1>/* */:</p1> comentário mais de uma linha de código</p>
+    <p><p2>______________________________________________________________</p2></p>
+    <h1>Tipos de dados e variáveis</h1>
+    <p>EXEMPLOS:</p>
+    <p1><p>var n1 = 5</p>
+        <p>var n2 = 8.5</p>
+        <p>var n3 = 15</p>
+        <p>var s1 = "JavaScript"</p>
+        <p>var s2 = 'Curso em Vídeo'</p>
+        <p>var s3 = `Guanabara`</p></p1>
+    
+    <p>IDENTIFICADORES:</p>
+    <p><p1>Podem começar com letra, $ ou _</p>
+    <p><p1>Não podem começar com números
+    <p><p1>Pode usar palavras com acento
+    <p><p1>Não pode conter espaço, se usa anderlaine
+    <p><p1>Não pode usar palavras do propio java
+    
+    <p>TIPOS DE DADOS</p>
+    <p><p1>number Infinity NaN string boolean null undefined object array function </p1></p>
+    
+    <p><p2>typeof</p2> para saber qual o tipo</p>
+    <p>EXEMPLOS DE <p2>typeof</p2></p>
+    <p><p2>typeof 6</p2> <p1>'number'</p1></p> 
+    <p><p2>typeof k</p2> <p1>'string'</p1></p>
+    <p><p2>typeof "6"</p2> <p1>'string'</p1></p>
+    <p><p2>typeof []</p2> <p1>'object'</p1></p>
+    <p><p2>typeof {}</p2> <p1>'object'</p1></p>
+    <p><p2>typeof NaN</p2> <p1>'number'</p1></p>
+    <p>Se botar dentro de <p2>"Aspas"</p2> vira <p1>'string'</p1></p>
+    <p>Se botar dentro de <p2>[colchetes]</p2> ou <p2>{chaves}</p2>  é <p1>'object'</p1></p>
+    
+
+    <p></p>
+    
+    
+    <script>
+       
+       var n1 = Number(window.prompt('Digite um número: ')) //String
+       var n2 = Number(window.prompt('Digite outro número: ')) //String
+     var s = n1 + n2
+     window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Concatenação
+     //(number + number) para adição
+     //(string + string) para concatenação
+     
+    </script>
+</body>
+</html>
