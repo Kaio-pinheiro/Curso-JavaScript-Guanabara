@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    
+    <style>
+      body   {background-color: rgb(248, 248, 248); /*para cor do fundo*/
+        color: rgb(10, 10, 10); /*para cor da letra*/
+        font: normal 20pt ARIAL; /*pra escolher o tamanho e a fonte*/
+    }  
+        h1 {color: rgb(10, 10, 10);} /*cor dos títulos*/
+        p1 {color: darkorchid;} 
+        P2 {color: rgb(224, 12, 55);}
+
+
+      
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <p><p1>HTML:</p1> conteúdo, é o body e a parte do cabeçalho na head</p>   
+    <p><p1>CSS:</p1> style> estilo, na head</p>
+    <p><p1>JS:</p1> interação, é o script</p>
+    <p>Para abrir, <p1>file-open folder-new folder-new file---ex001.html</p1></p>
+    <p>Para começar digitar <p1>html:5</p1></p>
+    <p><p1>html lang= "pt-br"</p1>  para mudar para portugues</p>
+    <p>______________________________________________________________</p>
+    
+    <h1>Comandos da head</h1>
+    <p><p1>head:</p1> cabeça</p>
+    <p><p1>title:</p1> é nome que aparece na aba do chrome</p>
+    <p><p1>style:</p1> pra mecher nas cores e tamanhos da letra, ta dentro é CSS, todo final tem ; ponto e virgula ;</p>
+    <p><p1>{background-color:</p1> cor do fundo</p>
+    <p><p1>color:</p1> cor da letra</p>
+    <p><p1>font}:</p1> tamanho da letra e fonte ex font: normal 20pt ARIAL</p>
+    <p><p1>h1 {color:}:</p1> cor do titulo</p>
+    <p><p1>p1 {color}:</p1> cor do p1</p>
+    <p>______________________________________________________________</p>
+    
+    <h1>Comandos do body</h1>
+    <p><p1>h1:</p1> titulo</p>
+    <p><p1>p:</p1> novo parágrafo</p>
+    <p><p1>p1:</p1> para dividir o texto e poder trocar de cor</p>
+    <p>______________________________________________________________</p>
+    
+    <h1>Comandos do script</h1>
+    <p>Geralmente o script vai no final do body, para ser carregado depois do codigo base</p>
+    <p><p1>window.alert('MENSAGEM')</p1> ou só <p1>alert('MENSAGEM'):</p1> alerta com mensagem simples, só opção 'ok' ou 'cancel'</p>
+    <p><p1>window.confirm('MENSAGEM'):</p1> janela de confirmação</p>
+    <p><p1>window.prompt('MENSAGEM'):</p1> janela de resposta</p>
+    <p>Para saber as respostas precisa de variáveis na frente</p>
+    <p> var nome = window.prompt('Qual é seu nome?')</p>
+        <p>document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</br>`)</p>
+        <p>document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)</p>
+        <p>document.write(`Seu nome em minusculas é ${nome.toLowerCase()}`)</p>
+        <p>PARA PULAR PRA LINHA DEBAIXO USAR +/br- DENTRO DAS ASPAS</p>
+        <p>PARA BOTAR A PALAVRA EM NEGRITO USAR +STRONG-+/STRONG-</p>
+    <p>______________________________________________________________</p>
+    <p><p2>______________________________________________________________</p2></p>
+    
+    <p><p1><strong>Comentários do script (javascript)</strong></p1>
+    <p><p1>//:</p1> comentário em uma única linha</p>
+    <p><p1>/* */:</p1> comentário mais de uma linha de código</p>
+    <p><p1><strong>Comentário em html</strong></p1></p>
+    <p><p1>!-- -->:</p1>comentário somente na parte html</p>
+    <p><p1><strong>Comentário em css</strong></p1></p>
+    <p><p1>/* */:</p1>comentário somente na parte de css</p>
+    <p><p2>______________________________________________________________</p2></p>
+    <p>______________________________________________________________</p>
+    
+    <h1>Tipos de dados e variáveis</h1>
+    <p><strong>EXEMPLOS:</strong></p>
+    <p1><p>var n1 = 5</p>
+        <p>var n2 = 8.5</p>
+        <p>var n3 = 15</p>
+        <p>var s1 = "JavaScript"</p>
+        <p>var s2 = 'Curso em Vídeo'</p>
+        <p>var s3 = `Guanabara`</p></p1>
+        <p>______________________________________________________________</p>
+    
+    <p><strong>IDENTIFICADORES:</strong></p>
+    <p><p1>Podem começar com letra, $ ou _</p>
+    <p><p1>Não podem começar com números
+    <p><p1>Pode usar palavras com acento
+    <p><p1>Não pode conter espaço, se usa anderlaine
+    <p><p1>Não pode usar palavras do propio java
+        <p>______________________________________________________________</p>
+    
+    <p><strong>TIPOS DE DADOS</strong></p>
+    <p><p1>number Infinity NaN string boolean null undefined object array function </p1></p>
+    
+    <p><p2>typeof</p2> para saber qual o tipo</p>
+    <p>EXEMPLOS DE <p2>typeof</p2></p>
+    <p><p2>typeof 6</p2> <p1>'number'</p1></p> 
+    <p><p2>typeof k</p2> <p1>'string'</p1></p>
+    <p><p2>typeof "6"</p2> <p1>'string'</p1></p>
+    <p><p2>typeof []</p2> <p1>'object'</p1></p>
+    <p><p2>typeof {}</p2> <p1>'object'</p1></p>
+    <p><p2>typeof NaN</p2> <p1>'number'</p1></p>
+    <p>Se botar dentro de <p2>"Aspas"</p2> vira <p1>'string'</p1></p>
+    <p>Se botar dentro de <p2>[colchetes]</p2> ou <p2>{chaves}</p2>  é <p1>'object'</p1></p>
+    <p>______________________________________________________________</p>
+
+    <h1>Variáveis</h1>
+    <p>A variavel nome recebe o resultado do prompt que vai aparecer na janela e o resultado fica guardado na var nome</p>
+    <p><strong>EXEMPLOS:</strong></p>
+    <p><p1>var nome = window.prompt('Qual é seu nome?')</p1> Ex Resposta: Tomy</p>
+     <p><p2>SINAL DE + CHAMADO DE CONCATENAÇÃO</p2></p>
+        <p><p1>window.alert('É um prazer te conhecer, ' + nome):</p1> Usando a concatenação + para juntar e usar a resposta do prompt</p>
+    <p>Ex Resposta: É um prazer te conhecer, Tomy</p>
+    <p>Se quiser por algo depois do nome usa CONCATENAÇÃO denovo 
+    <p><p1>window.alert('É um prazer te conhecer, ' + nome + '!')</p1> </p>
+    <p>O prompt retorna pra mim como uma <p2>string</p2> mesmo que eu digite um numero</p>
+    <p>Como eu recebo um. valor <p2>string</p2> eu preciso converter para <p2>number</p2></p>
+    <p>______________________________________________________________</p>
+
+    <p><strong>EXEMPLOS DE <p2>STRING</p2> PARA <p2>NÚMERO</p2></strong></p>
+    <p><p1>Number.parseInt:</p1> conversão para um número inteiro ex: 1 2 3 </p>
+    <p><p1>Number.parseFloat:</p1> se você quiser numero real, número com virgula 1.5 2.5 3.5</p>
+    <p><p1>Number:</p1>quando não precisa especificar o número </p>
+    <p><storng>EXEMPLOS:</storng></p>
+    <p><p1>var n1 = Number.parseInt(window.prompt('Digite um número: '))</p1></p>
+    <p><p1>var n1 = Number.parseFloat(window.prompt('Digite um número: '))</p1></p>
+    <p><p1>var n1 = Number(window.prompt('Digite um número: '))</p1></p>
+    <p>______________________________________________________________</p>
+
+    <p><strong>EXEMPLOS DE <p2>NÚMERO</p2> PARA <p2>STRING</p2></strong></p>
+    <p><p1>String(?)</p1></p>
+    <p><p1>?.toString()</p1></p>
+    <p><p1>window.alert('A soma dos valores é, ' + ?.toString())</p></p>
+    <p><p1>window.alert('A soma dos valores é, ' + String(?))</p1></p>
+    <p>______________________________________________________________</p>
+
+    <p><strong>FORMATANDO STRINGS</strong></p>
+    <p><strong>Exemplos:</strong></p>
+    <P><p1>var s = 'JavaScript'</p1></P>
+    <p>'Eu estou aprendendo s'    -- não faz interpolação</p>
+    <p>'Eu estou aprendendo' + s  -- usa concatenação</p>
+    <p>`Eu estou aprendendo ${s}` -- usa template string</p>
+   <p><p1>s.length</p1> -- quantos caracteres a string tem</p>
+   <p><p1>s.toUpperCase()</p1> -- tudo para "MAIÚSCULAS"</p>
+   <p><p1>s.toLowerCase()</p1> -- tudo para "minúsculas"</p>
+   
+    <p><p1>var nome = Kaio</p1></p>
+    <p><p1>var idade = 27</p1></p>
+    <p><p1>var nota = 10</p1></p>
+    <p>'O aluno ' + nome + ' com ' + idade + ' anos tirou a nota ' + nota</p>
+    <p>`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`</p>
+    <p>______________________________________________________________</p>
+
+  <p><strong>FORMATANDO NÚMEROS</strong></p>
+  <p><strong>Exemplos:</strong></p>
+  <p><p1>var n1 = 1545.5</p1></p>
+  <p><p1>n1.toFixed(2):</p1> Para fica com duas casas decimais 1545.50</p>
+  <p><p1>n1.toFixed(2).replace('.', ','):</p1> Para trocar o ponto do numero por virgula 1545,50</p>
+  <p><p1>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}):</p1> R$ 1,545.50</p>
+  <p><p1>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}):</p1> US$ 1,545.50</p>
+  <p><p1>n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}):</p1> euro 1,545.50</p>
+  <p>______________________________________________________________</p>
+
+  <h1>FAMÍLIAS DE OPERADORES</h1>
+   <p>OPERADORES ARITMÉTICOS</p>
+   <p>OPERADORES ATRIBUIÇÃO</p>
+   <p>OPERADORES RELACIONAIS</p>
+   <p>OPERADORES LÓGICOS</p>
+   <p>OPERADOR TERNÁRIO</p>
+
+   <p><strong>OPERADOR ARITMÉTICOS</strong></p>
+   <p>5 <p2>+</p2> 2 = 7</p>
+   <p>5 <p2>-</p2> 2 = 3</p>
+   <p>5 <p2>*</p2> 2 = 10</p>
+   <p>5 <p2>/</p2> 2 = 2.5</p>
+   <p>5 <p2>%</p2> 2 = 1 <p2>%</p2> É O RESTO DA DIVISÃO INTEIRA</p>
+   <p>5 <p2>**</p2> 2 = 25 <p2>**</p2>POTÊNCIA É AO QUADRADO</p>
+   <p>______________________________________________________________</p>
+   <p2>______________________________________________________________</p2>
+
+   <p><p2>ORDEM DE PRECEDÊNCIA DOS OPERADORES ARITMÉTICOS</p2></p>
+   <p2>
+   <p>()</p>
+   <p>**</p>
+   <p>* / %</p>
+   <p>+ -</p>
+   </p2>
+
+   <p>Depois de fazer todos os operadores aritméticos, faz os relacionais que nao tem ordem</p>
+   
+   <p><p2>OPERADORES RELACIONAIS</p2></p>
+    <p2><p>></p>
+    <p><</p>
+    <p>>=</p>
+    <p><=</p>
+    <p>==</p> 
+    <p>!=</p></p2>
+
+   <p><p2>ORDEM DOS OPERADORES LÓGICOS</p2></p>
+   <p><p2>!</p2> negação</p>
+   <p><p2>&&</p2> e</p>
+   <p><p2>||</p2> ou</p>
+
+   <p2>______________________________________________________________</p2>
+   <p>______________________________________________________________</p>       
+   <h1>ATRIBUIÇÃO SIMPLES</h1>
+   <p><p1>var a = 5 + 3</p1>     R: 8</p>
+    <p><p1>var b = a % 5</p1>     R: 3</p>
+    <p><p1>var c = 5 * b**2</p1>  R: 45</p>
+    <p><p1>var d = 10 - a/2</p1>  R: 6</p>
+    <p><p1>var e = 6*2 / d </p1>  R: 2</p>
+    <p><p1>var f = b%e + 4/e</p1> R: 3</p>
+    <p>______________________________________________________________</p>
+
+    <h1>AUTO ATRIBUIÇÕES</h1>
+    <p><p1>var n = 3</p1> R:3</p>
+    <p><p1>n = n + 4</p1> R:7</p>
+    <p><p1>n = n - 5</p1> R:2</p>
+    <p><p1>n = n * 4</p1> R:8</p>
+    <p><p1>n = n / 2</p1> R:4</p>
+    <p><p1>n = n **2</p1> R:16</p>
+    <p><p1>n = n % 5</p1> R:1</p>
+    <p><p1>var n</p1> Partiu de 3 passou por varios valores e terminou valendo 1, isso é auto atribuições</p>
+
+  <p><strong>SIMPLIFICANDO AUTO ATRIBUIÇÕES</strong></p>
+  <p>n <p1>+=</p1> 4</p>
+  <p>n <p1>-=</p1> 5</p>
+  <p>n <p1>*=</p1> 4</p>
+  <p>n <p1>/=</p1> 2</p>
+  <p>n <p1>**=</p1> 2</p>
+  <p>n <p1>%=</p1> 5</p>
+  <p><p2>Só funciona se a mesma variavel receber ela mesma ai pode usar!</p2></p>
+  <p>Incremento para adicionar 1 ou diminuir 1</p>
+  <p><p1>++n</p1> ou <p1>n++</p1></p>
+  <p><p1>--n</p1> ou <p1>n--</p1></p>
+  
+  <p>______________________________________________________________</p>
+
+  <h1>OPERADORES RELACIONAIS</h1>
+  <p>PARA TODA EXPRESSÃO QUE TENHA UM OPERADOR RELACIONAL LIGADO A ELA O RESULTADO DESSA EXPRESSÃO VAI SER SEMPRE UM VALOR BOOLEANO UM VALOR VERDAEIRO OU FALSO</p>
+  <p>5 <p1>></p1> 2 <p1>true</p1></p>
+  <p>7 <p1><</p1> 4 <p1>false</p1></p>
+  <p>8 <p1>>=</p1> 8 <p1>true</p1></p>
+  <p>9 <p1><=</p1> 7 <p1>false</p1></p>
+  <p>5 <p1>==</p1> 5 <p1>true</p1> O OPERADOR DE IGUALDADE DO JS É <p1>==</p1></p>
+  <p>4 <p1>!=</p1> 4 <p1>false</p1> QUER DIZER NÃO IGUAL <p1>!=</p1></p>
+  <p><p2>Se tiver operadores aritméticos e operadores relacionais na expressão, resolver primeiro o aritmético depois os relacionais!!!</p2></p2></p>
+<p>Exemplo: <p1>var a = 10</p1> e <p1>var b = 20</p1></p>
+<p><p1>a <= b - 10</p1>(Resolve primeiro <p1>b - 10</p1> depois <p1>a <= </p1>b-10 R:true</p>
+<p><strong>OPERADOR RELACIONAIS DE IDENTIDADE</strong></p>
+<p>5 <p1>==</p1> 5 <p1>true</p1></p>
+<p>5 <p1>==</p1> '5' <p1>true</p1></p>
+<p><p2>Pro js o sinal de igualdade nao testa o tipo, o valor '5' em 'string' é o mesmo valor</p2></p>
+<p>5 <p1>===</p1> '5' <p1>false</p1>
+<p>Pra saber se são idênticos o mesmo valor e o mesmo tipo, por isso <p1>false</p1> pois um é <p1>number</p1> outro <p1>string</p1></p>
+
+<p><strong>Alguns exemplos:</strong></p>
+<p>preco <p1>>=</p1> 200.50        <strong>// o preço é maior ou igual a 200.50?</strong></p>
+<p>idade <p1><</p1> 18             <strong>//a idade é menor do que 18?</strong></p>
+<p>curso <p1>==</p1> 'Javascript'  <strong>// o curso é javascript?</strong></p>
+<p>n1 <p1>!=</p1> n2               <strong>//o primeiro número é diferente do segundo?</strong></p>
+<p>______________________________________________________________</p>
+<h1>OPERADORES LÓGICOS</h1>
+<p><p1>!</p1> negação</p>
+<p><p1>&&</p1> conjunção - funciona como E</p>
+<p><p1>||</p1> disjunção - funciona como OU</p>
+<p>________________________________</p>
+
+<p><p1>!</p1></p>
+<p>true - false</p>
+<p>false - true</p>
+<p>________________________________</p>
+
+<p><p1>&&</p1></p>
+<p>true && false - <p1>true</p1></p>
+<p>true && false - <p1>false</p1></p>
+<p>false && true - <p1>false</p1></p>
+<p>false && false - <p1>false</p1></p>
+<p>________________________________</p>
+
+<p><p1>||</p1></p>
+<p>true || true - <p1>true</p1></p>
+<p>true || false - <p1>true</p1></p>
+<p>false|| true - <p1>true</p1></p>
+<p>false || false - <p1>false</p1></p>
+<p>________________________________</p>
+
+<p><strong>Se tiver operadores <p1>aritméticos</p1>, operadores <p1>relacionais</p1> e operadores <p1>lógicos</p1> na expressão, resolver <p2>primeiro o aritmético</p2>, depois o <p2>relacionais</p2> e depois os operadores <p2>lógicos</p2>!!!</strong></p>
+
+<p>Alguns exemplos:</p>
+<p>idade <p1>>=</p1> 15 <p1>&&</p1> idade <p1><=</p1>17  <strong> // A idade está entre 15 e 17?</strong></p>
+<p>estado <p1>==</p1> 'RJ' <p1>||</p1> estado <p1>==</p1> 'SP' <strong> // O estado é RJ ou SP?</strong></p>
+<p>salário <p1>></p1> 1500 <p1>&&</p1> sexo <p1>!=</p1> 'M' <strong> // O salário é acima de 1500 e nao é homem?</strong></p>
+
+<h1>OPERADOR TERNÁRIO</h1>
+<p><p2>? :</p2> Dentro de uma mesma expressão</p>
+<p><strong>Exemplos:</strong></p>
+<p><p1>var media = 7</p1></p>
+<p><p1>media >= 7.0 ? "APROVADO" : "REPROVADO"</p1></p>
+<p><p1>R:"APROVADO"</p1></p>
+<p><p1>teste ? true : false</p1></p>
+<p>______________________________________________________________</p>
+<h2>(AULA 09)</h2>
+<h1>Entendendo o DOM</h1>
+<h3>ex005.html</h3>
+<p>Document Object Model</p>
+<p>O que é <strong>DOM</strong>? Basicamente é um conjunto de objetos dentro do seu navegador que vai da acesso aos componentes internos do seu website. </p>
+<p>O DOM nao funciona dentro do NodeJS por exemplo, o dom esta presente quando estou rodando javascript dentro do meu navegador.</p>
+<p><strong>ÁRVORE DOM</strong></p>
+<p><p2>_________window__________</p2></p>
+<p><p2>location __document__ history</p2></p>
+<p><p2>__________html__________</p2></p>
+<p><p2>______head___body_______</p2></p>
+<p><p2>meta_title___h1_p_p_div</p2></p>
+<p><p2>______________strong____</p2></p>
+<p>ESSA É A ARVORE HIERÁRQUICA DO SITE QUE ACABEI DE CRIAR(AULA 09 ex005.html)</p>
+
+<p><p2>window</p2>TUDO DENTRO_ DO JAVASCRIPT ESTA DENTRO DE UM OBJETO CHAMADO WINDOW(A JANELA DO SEU NAVEGADOR É UM OBJETO DOM )</p>
+<p><p2>location</p2>QUE DIZ QUAL A LOCALIZAÇÃO DO SEU SITE QUAL É A URL, QUAL É A PAGINA ATUAL, QUAL FOI A PAGINA ANTERIOR. </p>
+<p><p2>document</p2>É O DOCUMENTO ATUAL</p>
+<p><p2>history</p2>VAI GUARDANDO DE ONDE VOCE VEIO PRA ONDE VOCE VAI E ISSO FACILITA A NAVEGAÇÃO DENTRO DO SEU SITE</p>
+<p><p2>html</p2>É EXATAMENTE A PARTE HTML DO MEU SITE</p>
+<p><strong>Alguns exemplos:</strong></p>
+ <p>Dentro de <p2>window</p2> eu tenho <p2>document</p2> dentro tenho <p2>body</p2> ENTÃO EU TENHOA A ESTRUTURA DA MINHA ARVORE QUE ACABEI DE MONTAR.</p>
+ <p>window.document.write('Olá, Mundo!') posso escrever dentro do meu documento, por javascript por dom eu fui adicionando componentes</p>
+ <p>window.document.write(window.document.URL) para saber a URL, EU POSSO TER ACESSO A VARIOS COMPONENTES USANDO DIRETAMENTE <strong>DOM</strong>DENTRO DO MEU JVASCRIPT</p>
+<p>eu posso navegar dentro dessa arvore da maneira que eu achar melhor, e pra isso existe varias maneira de navegar entre os elementos, e eu posso selecionar esses elementos para poder navegar dentro da minha arvore dom</p>
+<p>SELECIONAN DO</p>
+<p>Marca</p>
+<p>ID</p>
+<p>Nome</p>
+<p>Classe</p>
+<p>Seletor</p>
+
+<p>POR MARCA</p>
+<p><p1>getElementsByTagName()</p1> Quando voce usa getElementsByTagName eu consigo selecionar mais de um objeto, porque existem varios objetos do mesmo tipo, da mesma tag, por exemplo do nosso codigo temos dois paragrafos(p)</p>
+<p>var p1 = window.document.getElementsByTagName('p')[0]</p> Como tem dois (p) para escolher colocar entre colchete [0] para primeiro paragrafo, [1] para o segundo e assim sucessivamente.</p>
+<p>window.document.write(p1.innerText) ou innerHTML o texto que ta dentro do primeiro paragrafo, se quiser outro paragrafo mudar pra [1] por exemplo. </p> 
+ <p>p1.style.color = 'blue' invez de escrever na tela, posso mudar a cor do primeiro paragrafo </p>
+ <p>posso criar uma var corpo e esse corpo ser o acesso window.document.body e mudar a cor de fundo a qualquer momento</p>
+ <p>var corpo = window.document.body</p>
+ <p>corpo.style.background = 'black'</p> 
+ <p>Eu consigo fazer acesso a todos os componentes usando getElementsByTagName</p>
+
+ <p>POR ID NOME CLASSE E SELETOR </p>
+ <p><p1>getElementById()</p1> posso identificar um paragrafo ou a div que agente vai utilizar, por ID e usar o getElementsById EU TBM POSSO UTILIZAR O NOME DO OBJETO SE EU TENHO UMA PROPIEDADE NOME AI VOU UTILIZAR getElementsByName() tem que usar o colchetes quando eu tenho mais de um objeto, quando eu tenho mais de um da mesma classe ou do mesmo nome eu vou usar muito por marca e tambem por name</p>
+<p>Eu também posso utilizar o nome do objeto se eu tenho uma propiedade name, entao vou usar o getElementsByName()</p>
+<p>Quando eu tenho mais de um objeto da mesma classe ou do mesmo nome, eu vou usar muito por marca ou getElementsByName, quando eu selecionar um bojeto ou a familia dele vou usar o getElementsById</p>
+<p>Posso pegar minha div invez de utilizar o getElementsByTagName quando tenho muitas tags div eu dou um id para a div</p>
+<p>div id = "msg">Clique em mim /div></p>
+<p>var d = window.document.getElementById('msg') Então eu to selecionando minha div pelo id dela</p>
+<p>d.style.background = 'green'</p>
+<p>d.innerText = 'Estou aguardando...'</p>
+<p>PODE USAR TAMBÉM</p>
+<p>var d = window.document.querySelector('div#msg') quando é 'ID' é '#' quando é 'classe' é '.' ('div.msg'),</p>
+<p>d.stye.background = 'blue'</p>
+<p>______________________________________________________________</p>
+
+<h2>(AULA 10)</h2>
+<h1>EVENTOS DOM</h1>
+<h3>ex006.html</h3>
+   Ler o codigo do ex006 sobre function, onclick, mouseenter, div e etc
+<h3>ex007.html</h3>
+   Ler o codigo 007 sobre input button function
+<p>______________________________________________________________</p>
+
+<h2>(AULA 11) e (AULA 12)</h2>
+<h2>CONDIÇÕES SIMPLES</h2>
+<p>if {
+}
+</p>
+<h2>CONDIÇÕES COMPOSTA</h2>
+<p>if {}</p>
+<p>else {}
+</p>
+<h2>CONDIÇÕES ANINHADAS</h2>
+<p>if {}</p>
+<p>else if {}</p>
+<p>else {}</p>
+<h2>CONDIÇÕES MÚLTIPLA</h2>
+<p>switch {</p>
+ <p>case valor 1:</p>
+ <p>break</p>
+ <p>case valor 2:</p>
+ <p>break</p>
+ <p>case valor 3:</p>
+ <p>break</p>
+ <p>default:</p>
+ <p>break</p>
+<p>}</p>
+<p>______________________________________________________________</p>
+
+<h2>(AULA 13) e (AULA 14)</h2>
+<p> FALTA O RESUMO</p>
+<p>______________________________________________________________</p>
+
+<h2>(AULA15)</h2>
+<h2>VARIÁVEIS COMPOSTAS</h2>
+<p>um array, vetor, variavel composta é uma variavel que tem varios elementos, cada elemento é composto por seu valor e uma chave de identificação</p>
+
+
+
+
+
+
+<script>
+       /* 
+        var n1 = Number(window.prompt('Digite um número: ')) //String
+       var n2 = Number(window.prompt('Digite outro número: ')) //String
+     var s = n1 + n2
+     window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Concatenação
+     //(number + number) para adição
+     //(string + string) para concatenação
+
+    
+        var nome = window.prompt('Qual é seu nome?')// Vai perguntar o nome...
+      window.alert('É um prazer te conhecer, ' + nome + '!!!')
+      window.confirm('Está gostando de JavaScript?')//janela com botao ok e cancel
+
+      var sobrenome = window.prompt('Qual é seu sobrenome?')// Vai perguntar o nome
+        document.write(`Olá, <strong>${sobrenome}</strong>! Seu sobrenome tem ${sobrenome.length} letras.</br>`)
+        document.write(`Seu sobrenome em maiúsculas é ${sobrenome.toUpperCase()}</br>`)
+   document.write(`Seu sobrenome em minusculas é ${sobrenome.toLowerCase()}`)
+       */
+    </script>
+</body>
+</html>
